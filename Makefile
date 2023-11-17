@@ -6,7 +6,7 @@ OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
-$(NAME): makelibft $(OBJS)
+$(NAME): $(OBJS)
 	@ar -rcs $(NAME) $(OBJS)
 
 clean:
